@@ -1,0 +1,167 @@
+/* reset css */ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+/* Configurações gerais para as seções */
+
+section {
+
+    /* dimensões da imagem */ 
+    width: 100%;
+    height: 700px;
+
+    /* Background */
+    background-position: center;        /* Centralizar a imagem do background */ 
+    background-size: cover;             /* Para cobrir toda a seção - o cover resolve o problema do posicionamente da imagem junto com o position*/
+    background-repeat: no-repeat;       /* Não repetir a imagem */
+    background-attachment: fixed;       /* fixar a imagem - efeito parallax */
+
+    /* Posicionamento com flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Capa do guia turístico */
+
+#introducao {
+
+    background-image: url(imagens/exploradora.jpg);
+    background-position: 0px 16%;
+}
+
+#titulo {
+
+    /* posicionamento com flexbox */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    /* estilização do texto */
+    
+    font-size: 26px;
+    color:aliceblue;
+    letter-spacing: 3px;
+    padding: 12px;
+    background-color: black;
+    width: 400px;
+    margin-top: 40px;
+}
+
+/* textos */
+
+#texto-1 {
+    background-color: black;
+    width: auto;
+    height: 125px;
+    text-align: left;
+}
+
+#texto-1 p {
+    color: aliceblue;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#texto-2 {
+    background-color: black;
+    width: auto;
+    height: 140px;
+    text-align: left;
+}
+
+
+#texto-2 p {
+    color: aliceblue;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#texto-3 {
+    background-color: black;
+    width: auto;
+    height: 110px;
+    text-align: left;
+}
+
+#texto-3 p {
+    color: aliceblue;
+    text-align: justify;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+/* Quebras */
+
+#quebra-1 {
+    background-color: #F4F4F4;
+    height: 250px;
+}
+
+.quebra-2 {
+    background-color: #F4F4F4;
+    height: 200px;
+}
+
+/* Imagens de interação */ 
+
+/* Asa de avião */ 
+
+#asa {
+    background-image: url(./imagens/asa.jpg); 
+    background-position: 0px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: 410px;
+}
+
+/* Gif de trem */
+
+#trem {
+    background-image: url(./imagens/trem.gif);
+    background-position: 0px -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: 410px;
+}
+
+/* Países */
+
+#inglaterra {
+    background-image: url(./imagens/inglaterra.jpg);
+    background-position: 0px 10px;
+}
+
+#italia {
+    background-image: url(./imagens/italia.jpg);
+    background-position: 0 77%;
+}
+
+#franca {
+    background-image: url(./imagens/franca.jpg);
+    background-position: 0 70%;
+}
+
